@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.trimix.model.Persona;
+import com.trimix.model.PersonaBuscar;
 import com.trimix.service.PersonasService;
 
 @Controller
@@ -49,8 +50,13 @@ public class NuevaPersonaController {
 			return "formPersona";
 		}
 		model.clear();
-//		model.addAttribute("personas", service.retrievePersona(personaBuscar.getPerNombre(),personaBuscar.getPerTipoDocumento()));
-		return "personas";
+		model.addAttribute("personaBuscar", new PersonaBuscar("",""));
+	    List<String> tiposDocumento = new ArrayList<String>();
+	    tiposDocumento.add("DNI");
+	    tiposDocumento.add("Pasaporte");
+	    tiposDocumento.add("Cedula");
+	    model.addAttribute("tiposDocumento", tiposDocumento);
+		return "buscar";
 	}
 	
 }
