@@ -26,10 +26,10 @@
 					<td><fmt:formatDate pattern="dd/MM/yyyy" value="${persona.perFechaNacimiento}" /></td>	
 					<td>
 						<a type="button" class="btn btn-light" 
-							href="/update-todo?id=${todo.id}">Editar</a>
+							href="/editar?id=${persona.perId}">Editar</a>
 
 						<a type="button" class="btn btn-danger" 
-							href="/delete-todo?id=${todo.id}">Eliminar</a>
+							href="/eliminar?id=${persona.perId}">Eliminar</a>
 					</td>
 				</tr>
 			</c:forEach>

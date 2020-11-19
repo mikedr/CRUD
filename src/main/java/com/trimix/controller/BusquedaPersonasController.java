@@ -16,7 +16,7 @@ import com.trimix.model.PersonaBuscar;
 import com.trimix.service.PersonasService;
 
 @Controller
-public class BusquedaPeronasController {
+public class BusquedaPersonasController {
 	
 	@Autowired
 	private PersonasService service;

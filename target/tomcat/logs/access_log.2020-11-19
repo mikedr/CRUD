@@ -259,3 +259,15 @@
 0:0:0:0:0:0:0:1 - - [19/Nov/2020:02:12:51 -0300] "POST /nuevaPersona HTTP/1.1" 500 5742 http-bio-8080-exec-10 244
 0:0:0:0:0:0:0:1 - - [19/Nov/2020:02:12:51 -0300] "GET /favicon.ico HTTP/1.1" 404 949 http-bio-8080-exec-2 4
 0:0:0:0:0:0:0:1 - - [19/Nov/2020:02:12:55 -0300] "GET /favicon.ico HTTP/1.1" 404 949 http-bio-8080-exec-1 4
+0:0:0:0:0:0:0:1 - - [19/Nov/2020:02:14:02 -0300] "GET / HTTP/1.1" 200 1053 http-bio-8080-exec-1 135
+0:0:0:0:0:0:0:1 - - [19/Nov/2020:02:14:02 -0300] "GET /favicon.ico HTTP/1.1" 404 949 http-bio-8080-exec-2 5
+0:0:0:0:0:0:0:1 - - [19/Nov/2020:02:14:03 -0300] "GET /personas HTTP/1.1" 200 1451 http-bio-8080-exec-4 73
+0:0:0:0:0:0:0:1 - - [19/Nov/2020:02:14:03 -0300] "GET /favicon.ico HTTP/1.1" 404 949 http-bio-8080-exec-5 1
+0:0:0:0:0:0:0:1 - - [19/Nov/2020:02:14:04 -0300] "GET /nuevaPersona HTTP/1.1" 200 2771 http-bio-8080-exec-6 269
+0:0:0:0:0:0:0:1 - - [19/Nov/2020:02:14:14 -0300] "POST /nuevaPersona HTTP/1.1" 200 2089 http-bio-8080-exec-7 247
+0:0:0:0:0:0:0:1 - - [19/Nov/2020:02:24:20 -0300] "GET / HTTP/1.1" 200 1053 http-bio-8080-exec-1 128
+0:0:0:0:0:0:0:1 - - [19/Nov/2020:02:24:23 -0300] "GET /personas HTTP/1.1" 200 1451 http-bio-8080-exec-2 1598
+0:0:0:0:0:0:0:1 - - [19/Nov/2020:02:26:01 -0300] "GET /personas HTTP/1.1" 200 2572 http-bio-8080-exec-1 309
+0:0:0:0:0:0:0:1 - - [19/Nov/2020:02:26:01 -0300] "GET /favicon.ico HTTP/1.1" 404 949 http-bio-8080-exec-2 8
+0:0:0:0:0:0:0:1 - - [19/Nov/2020:02:26:03 -0300] "GET /editar?id=1 HTTP/1.1" 200 2656 http-bio-8080-exec-4 178
+0:0:0:0:0:0:0:1 - - [19/Nov/2020:02:26:03 -0300] "GET /favicon.ico HTTP/1.1" 404 949 http-bio-8080-exec-5 3
