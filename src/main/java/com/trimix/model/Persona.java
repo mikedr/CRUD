@@ -2,8 +2,12 @@ package com.trimix.model;
 
 import java.util.Date;
 
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
+import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -11,14 +15,24 @@ import org.springframework.format.annotation.DateTimeFormat;
 public class Persona {
 	
 	private long perId;
+	
 	@NotBlank(message="Ingresar nombre")
+	@Pattern(regexp="^[A-Za-z \\s\\-]*$",message="Nombre invalido")
 	private String perNombre;
+	
 	@NotBlank(message="Ingresar apellido")
+	@Pattern(regexp="^[A-Za-z \\s\\-]*$",message="Apellido invalido")
 	private String perApellido;
+	
 	@NotNull(message="Ingresar número de documento")
+//	@Digits(fraction = 0, integer = 8)
+	@Min(value=1000000, message="Documento invalido")
+    @Max(value=99999999, message="Documento invalido")
 	private Long perNumeroDocumento;
+	
 	@NotBlank(message="Ingresar tipo de documento")
 	private String perTipoDocumento;
+	
 	@NotNull(message="Ingresar fecha de nacimiento")
 	@Past(message="No se puede agregar una persona que no nació aún")
 	@DateTimeFormat(pattern="dd/MM/yyyy")

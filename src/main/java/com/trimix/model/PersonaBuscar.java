@@ -2,11 +2,14 @@ package com.trimix.model;
 
 import javax.validation.constraints.Pattern;
 
+import org.hibernate.validator.constraints.NotBlank;
+
 public class PersonaBuscar {
 	
 	@Pattern(regexp="^[A-Za-z \\s\\-]*$",message="Nombre invalido")
 	private String perNombre;
 	
+	@NotBlank(message="Ingresar tipo de documento")
 	private String perTipoDocumento;
 	
 	public PersonaBuscar(String perNombre, String perTipoDocumento) {

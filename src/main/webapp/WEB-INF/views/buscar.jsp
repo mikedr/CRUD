@@ -12,7 +12,7 @@
 		</fieldset>
 		<fieldset class="form-group">			
 			<form:select  path="perTipoDocumento">
-		       <form:option value="NONE"> --SELECT--</form:option>
+		       <form:option value=""> </form:option>
 		       <form:options items="${tiposDocumento}"></form:options>
 			</form:select> 			
 		</fieldset>
