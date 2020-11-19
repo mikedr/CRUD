@@ -3,8 +3,10 @@ package com.trimix.model;
 import java.util.Date;
 
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
 
 import org.hibernate.validator.constraints.NotBlank;
+import org.springframework.format.annotation.DateTimeFormat;
 
 public class Persona {
 	
@@ -18,6 +20,8 @@ public class Persona {
 	@NotBlank(message="Ingresar tipo de documento")
 	private String perTipoDocumento;
 	@NotNull(message="Ingresar fecha de nacimiento")
+	@Past(message="No se puede agregar una persona que no nació aún")
+	@DateTimeFormat(pattern="dd/MM/yyyy")
 	private Date perFechaNacimiento;
 	
 	public Persona(long perId, String perNombre, String perApellido, Long perNumeroDocumento, String perTipoDocumento,
