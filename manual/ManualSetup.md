@@ -2,12 +2,12 @@
 
 ### Creacion de la base de datos
 
-Utilizando la interfaz grafica de MySQL crear una nueva conexion. Los parametros deben ser los siguientes (password = root):
+* Utilizando la interfaz grafica de MySQL crear una nueva conexion. Los parametros deben ser los siguientes (password = root):
 
 ![alt text](https://github.com/mikedr/trimix/blob/master/manual/DB001.png)
 
-Luego ejecutar el siguiente script para crear la tabla necesaria: 
-
+* Luego ejecutar el siguiente script para crear la tabla necesaria: 
+** [SQL script](https://github.com/mikedr/trimix/blob/master/manual/crearDByTabla.sql)
 
 ### Clonar el repositorio en un directorio local
 
