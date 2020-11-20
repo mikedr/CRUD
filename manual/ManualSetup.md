@@ -35,3 +35,8 @@ Utilizando la funcionalidad de crear servidor que brinda el IDE Eclipse crear un
 En la siguiente ventana es necesario ingresar el path donde se encuentra bajado [Tomcat9-Win64](https://apache.zero.com.ar/tomcat/tomcat-9/v9.0.40/bin/apache-tomcat-9.0.40-windows-x64.zip)
 
 ![alt text](https://github.com/mikedr/trimix/blob/master/manual/005.png)
+
+En la siguiente ventana pasar el proyecto al lado "Configurado". Luego "Finalizar".
+
+![alt text](https://github.com/mikedr/trimix/blob/master/manual/006.png)
+
