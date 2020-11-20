@@ -1,8 +1,8 @@
 # Manual de setup Trimix Test Code paso a paso
 
-### Creacion de la base de datos
+### Creación de la base de datos
 
-* Utilizando la interfaz grafica de MySQL crear una nueva conexion. Los parametros deben ser los siguientes (password = root):
+* Utilizando la interfaz gráfica de MySQL crear una nueva conexión. Los parámetros deben ser los siguientes (password = root):
 
 ![alt text](https://github.com/mikedr/trimix/blob/master/manual/DB001.png)
 
@@ -18,7 +18,7 @@ Click en Import...
 
 ![alt text](https://github.com/mikedr/trimix/blob/master/manual/001.png)
 
-Luego elegir esta opcion:
+Luego elegir esta opción:
 
 ![alt text](https://github.com/mikedr/trimix/blob/master/manual/002.png)
 
@@ -26,9 +26,9 @@ Luego ingresar en la siguiente ventana el path del proyecto donde fue clonado de
 
 ![alt text](https://github.com/mikedr/trimix/blob/master/manual/003.png)
 
-### Crear un servidor de aplicaciones Tomcat
+### Crear un servidor de aplicaciones
 
-Utilizando la funcionalidad de crear servidor que brinda el IDE Eclipse crear uno versión 9:
+Utilizando la funcionalidad de crear servidor que brinda el IDE Eclipse crear un Tomcat versión 9:
 
 ![alt text](https://github.com/mikedr/trimix/blob/master/manual/004.png)
 
@@ -50,9 +50,9 @@ El proceso finaliza al recibirse el siguiente mensaje:
 
 ![alt text](https://github.com/mikedr/trimix/blob/master/manual/008.png)
 
-### Acceder desde el browser
+### Acceder a la apliación
 
-Usando la URL http://localhost:8080/trimix/ ingresar a la aplicación.
+Ingresar la URL http://localhost:8080/trimix/ al browser.
 
 ![alt text](https://github.com/mikedr/trimix/blob/master/manual/009.png)
 
