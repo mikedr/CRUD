@@ -46,12 +46,6 @@ public class NuevaPersonaController {
 		}
 		personaService.savePersona(persona);
 		model.clear();
-		model.addAttribute("personaBuscar", new PersonaBuscar("",""));
-	    List<String> tiposDocumento = new ArrayList<String>();
-	    tiposDocumento.add("DNI");
-	    tiposDocumento.add("Pasaporte");
-	    tiposDocumento.add("Cedula");
-	    model.addAttribute("tiposDocumento", tiposDocumento);
 		return "redirect:buscar";
 	}
 	
