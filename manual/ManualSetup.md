@@ -40,3 +40,24 @@ En la siguiente ventana pasar el proyecto al lado "Configurado". Luego "Finaliza
 
 ![alt text](https://github.com/mikedr/trimix/blob/master/manual/006.png)
 
+### Levantar la aplicación
+
+En la sección de servidores de Eclipse ejecutar el botón que inicia el servidor que acabamos de crear y esperar que finalice el proceso de startup.
+
+![alt text](https://github.com/mikedr/trimix/blob/master/manual/007.png)
+
+El proceso finaliza al recibirse el siguiente mensaje:
+
+![alt text](https://github.com/mikedr/trimix/blob/master/manual/008.png)
+
+### Acceder desde el browser
+
+Usando la URL http://localhost:8080/trimix/ ingresar a la aplicación.
+
+![alt text](https://github.com/mikedr/trimix/blob/master/manual/009.png)
+
+Y así finaliza el proceso de setup.
+
+Muchas gracias.
+
+
