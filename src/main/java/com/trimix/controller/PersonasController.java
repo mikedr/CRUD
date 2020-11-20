@@ -59,14 +59,8 @@ public class PersonasController {
 			return "formPersona";
 		}
 		personaService.editPersona(persona);
-	    List<String> tiposDocumento = new ArrayList<String>();
-	    tiposDocumento.add("DNI");
-	    tiposDocumento.add("Pasaporte");
-	    tiposDocumento.add("Cedula");
 	    model.clear();
-		model.addAttribute("personaBuscar", new PersonaBuscar("",""));
-	    model.addAttribute("tiposDocumento", tiposDocumento);
-		return "buscar";
+		return "redirect:buscar";
 	}	
 	
 	@RequestMapping(value="/eliminar", method = RequestMethod.GET)
