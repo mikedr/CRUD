@@ -6,8 +6,7 @@
 
 ![alt text](https://github.com/mikedr/trimix/blob/master/manual/DB001.png)
 
-* Luego ejecutar el siguiente script para crear la tabla necesaria: 
-** [SQL script](https://github.com/mikedr/trimix/blob/master/manual/crearDByTabla.sql)
+* Luego ejecutar el siguiente script para crear la tabla necesaria: [SQL script](https://github.com/mikedr/trimix/blob/master/manual/crearDByTabla.sql)
 
 ### Clonar el repositorio en un directorio local
 
@@ -27,7 +26,10 @@ Luego ingresar en la siguiente ventana el path del proyecto donde fue clonado de
 
 ![alt text](https://github.com/mikedr/trimix/blob/master/manual/003.png)
 
+### Crear un servidor de aplicaciones Tomcat
 
-18:47:38	CREATE TABLE `persona` (   `id` int(11) NOT NULL AUTO_INCREMENT,   `perNombre` varchar(45) NOT NULL,   `perApellido` varchar(45) NOT NULL,   `perNumeroDocumento` int(11) NOT NULL,   `perTipoDocumento` varchar(45) NOT NULL,   `perFechaNacimiento` datetime DEFAULT NULL,   PRIMARY KEY (`id`) ) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci	Error Code: 1046. No database selected Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.	0.000 sec
+Utilizando la funcionalidad de crear servidor que brinda el IDE Eclipse crear uno versión 9:
+
+![alt text](https://github.com/mikedr/trimix/blob/master/manual/004.png)
 
 
