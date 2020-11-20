@@ -1,4 +1,4 @@
-CREATE DATABASE `trimixdb` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE trimixdb;
 CREATE TABLE `persona` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `perNombre` varchar(45) NOT NULL,
@@ -8,4 +8,3 @@ CREATE TABLE `persona` (
   `perFechaNacimiento` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
