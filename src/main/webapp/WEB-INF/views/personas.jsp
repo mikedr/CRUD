@@ -36,7 +36,7 @@
 		</tbody>
 	</table>
 	<div>
-		<a type="button" class="btn btn-success" href="/nuevaPersona">Nuevo</a>
+		<a type="button" class="btn btn-success" href="/trimix/nuevaPersona">Nuevo</a>
 	</div>
 </div>
 

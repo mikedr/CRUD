@@ -7,17 +7,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.trimix.model.Persona;
-import com.trimix.service.PersonasService;
+import com.trimix.service.PersonaService;
 
 @Controller
 public class PersonasController {
 	
 	@Autowired
-	private PersonasService service;
+	private PersonaService personaService;
 	
 	@RequestMapping(value="/personas", method = RequestMethod.GET)
 	public String mostrarPersonas(ModelMap model) {
-		model.addAttribute("personas", service.retrievePersonas());
+		model.addAttribute("personas", personaService.getPersonas());
 		return "personas";
 	}
 	

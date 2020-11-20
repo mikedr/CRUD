@@ -1,31 +1,26 @@
 package com.trimix.controller;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.trimix.model.Persona;
 import com.trimix.model.PersonaBuscar;
-import com.trimix.service.PersonasService;
+import com.trimix.service.PersonaService;
 
 @Controller
 public class NuevaPersonaController {
 	
 	@Autowired
-	private PersonasService service;
+	private PersonaService personaService;
 	
 	@RequestMapping(value="/nuevaPersona", method = RequestMethod.GET)
 	public String buscarPersonaPage(ModelMap model) {
@@ -49,6 +44,7 @@ public class NuevaPersonaController {
 		    model.addAttribute("tiposDocumento", tiposDocumento);
 			return "formPersona";
 		}
+		personaService.savePersona(persona);
 		model.clear();
 		model.addAttribute("personaBuscar", new PersonaBuscar("",""));
 	    List<String> tiposDocumento = new ArrayList<String>();
