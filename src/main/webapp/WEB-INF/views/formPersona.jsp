@@ -30,7 +30,7 @@
 		</fieldset>
 		<fieldset class="form-group">		
 			<form:label path="perFechaNacimiento">Fecha de nacimiento</form:label>
-			<form:input path="perFechaNacimiento" type="text" class="form-control" />
+			<form:input path="perFechaNacimiento" type="text" class="form-control" placeholder="DD/MM/AAAA"/>
 			<form:errors path="perFechaNacimiento" cssClass="text-warning" />
 		</fieldset>
 		<br>

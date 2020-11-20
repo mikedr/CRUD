@@ -26,17 +26,17 @@
 					<td><fmt:formatDate pattern="dd/MM/yyyy" value="${persona.perFechaNacimiento}" /></td>	
 					<td>
 						<a type="button" class="btn btn-light" 
-							href="/editar?id=${persona.perId}">Editar</a>
+							href="/trimix/editar?id=${persona.perId}">Editar</a>
 
 						<a type="button" class="btn btn-danger" 
-							href="/eliminar?id=${persona.perId}">Eliminar</a>
+							href="/trimix/eliminar?id=${persona.perId}">Eliminar</a>
 					</td>
 				</tr>
 			</c:forEach>
 		</tbody>
 	</table>
 	<div>
-		<a type="button" class="btn btn-success" href="/trimix/nuevaPersona">Nuevo</a>
+		<a type="button" class="btn btn-primary" href="/trimix/buscar">Volver</a>
 	</div>
 </div>
 

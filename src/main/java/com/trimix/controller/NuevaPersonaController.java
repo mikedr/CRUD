@@ -52,7 +52,7 @@ public class NuevaPersonaController {
 	    tiposDocumento.add("Pasaporte");
 	    tiposDocumento.add("Cedula");
 	    model.addAttribute("tiposDocumento", tiposDocumento);
-		return "buscar";
+		return "redirect:buscar";
 	}
 	
 }

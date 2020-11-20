@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.trimix.model.PersonaBuscar;
-import com.trimix.service.PersonasService;
+import com.trimix.service.PersonaService;
 
 @Controller
 public class BusquedaPersonasController {
 	
 	@Autowired
-	private PersonasService service;
+	private PersonaService personaService;
 	
 	@RequestMapping(value="/buscar", method = RequestMethod.GET)
 	public String buscarPersonaPage(ModelMap model) {
@@ -44,7 +44,17 @@ public class BusquedaPersonasController {
 			return "buscar";
 		}
 		model.clear();
-		model.addAttribute("personas", service.retrievePersona(personaBuscar.getPerNombre(),personaBuscar.getPerTipoDocumento()));
+		if(!personaBuscar.getPerNombre().isEmpty() && personaBuscar.getPerTipoDocumento().isEmpty()) {
+			model.addAttribute("personas", personaService.getPersonasPorNombre(personaBuscar.getPerNombre()));			
+		} else if(personaBuscar.getPerNombre().isEmpty() && !personaBuscar.getPerTipoDocumento().isEmpty()) {
+			model.addAttribute("personas", personaService.getPersonasPorTipoDoc(personaBuscar.getPerTipoDocumento()));			
+		} else if(!personaBuscar.getPerNombre().isEmpty() && !personaBuscar.getPerTipoDocumento().isEmpty()) {
+			model.addAttribute("personas", personaService.getPersonasPorNombreYPorTipoDoc(personaBuscar.getPerNombre(), personaBuscar.getPerTipoDocumento()));			
+		}
+		else if(personaBuscar.getPerNombre().isEmpty() && personaBuscar.getPerTipoDocumento().isEmpty()) {
+			model.addAttribute("personas", personaService.getPersonas());			
+		} 
+
 		return "personas";
 	}
 

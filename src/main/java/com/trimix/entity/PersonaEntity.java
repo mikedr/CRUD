@@ -15,7 +15,7 @@ public class PersonaEntity {
 
 	@Id
 	@Column(name="id")
-	@GeneratedValue(strategy=GenerationType.AUTO)	
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long perId;
 	
 	@Column(name="perNombre")

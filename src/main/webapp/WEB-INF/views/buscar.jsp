@@ -19,6 +19,9 @@
 		<br>
 		<button type="submit" class="btn btn-primary">Buscar</button>
 	</form:form>
+	<div>
+		<a type="button" class="btn btn-success" href="/trimix/nuevaPersona">Nuevo</a>
+	</div>
 </div>
 <%@ include file="common/footerMeassurement.jspf" %>
 <%@ include file="common/footer.jspf" %>

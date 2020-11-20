@@ -30,15 +30,38 @@ public class PersonaServiceImpl implements PersonaService{
 
 	@Override
 	@Transactional
-	public Persona getPersona(Integer id) {
+	public Persona getPersona(Long id) {
 		return personaDAO.getPersona(id);
 	}
 
 	@Override
 	@Transactional
-	public boolean deleteAccount(Integer accountNo) {
-		// TODO Auto-generated method stub
-		return false;
+	public List<Persona> getPersonasPorNombre(String nombre) {
+		return personaDAO.getPersonasPorNombre(nombre);
+	}
+	
+	@Override
+	@Transactional
+	public List<Persona> getPersonasPorTipoDoc(String tipoDOC) {
+		return personaDAO.getPersonasPorTipoDoc(tipoDOC);
+	}
+
+	@Override
+	@Transactional
+	public boolean deletePersona(Long id) {
+		return personaDAO.deletePersona(id);
+	}
+
+	@Override
+	@Transactional
+	public void editPersona(Persona persona) {
+		personaDAO.editPersona(persona);
+	}
+
+	@Override
+	@Transactional
+	public List<Persona> getPersonasPorNombreYPorTipoDoc(String nombre, String tipoDOC) {
+		return personaDAO.getPersonasPorNombreYPorTipoDoc(nombre, tipoDOC);
 	}
 
 }

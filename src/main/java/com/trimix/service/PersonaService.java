@@ -9,8 +9,16 @@ public interface PersonaService {
 	public boolean savePersona(Persona persona);
 	
 	public List<Persona> getPersonas();
+	
+	public Persona getPersona(Long id);
 
-	public Persona getPersona(Integer id);
+	public List<Persona> getPersonasPorNombre(String nombre);
 
-	public boolean deleteAccount(Integer accountNo);
+	public List<Persona> getPersonasPorTipoDoc(String tipoDOC);
+	
+	public List<Persona> getPersonasPorNombreYPorTipoDoc(String nombre, String tipoDOC);
+	
+	public boolean deletePersona(Long id);
+	
+	public void editPersona(Persona persona);
 }
