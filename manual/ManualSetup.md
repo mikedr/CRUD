@@ -6,9 +6,9 @@
 
 ![alt text](https://github.com/mikedr/trimix/blob/master/manual/DB001.png)
 
-* Luego ejecutar el siguiente script para crear la tabla necesaria: [SQL script](https://github.com/mikedr/trimix/blob/master/manual/crearDByTabla.sql)
+Luego ejecutar el siguiente script para crear la tabla necesaria: [SQL script](https://github.com/mikedr/trimix/blob/master/manual/crearDByTabla.sql)
 
-### Clonar el repositorio en un directorio local
+### Clonar el repositorio
 
 El primer paso consiste en clonar el repositorio a un directorio de la PC local.
 
@@ -22,7 +22,7 @@ Luego elegir esta opcion:
 
 ![alt text](https://github.com/mikedr/trimix/blob/master/manual/002.png)
 
-Luego ingresar en la siguiente ventana el path del proyecto donde fue clonado desde GitHub:
+Luego ingresar en la siguiente ventana el path del proyecto donde fue clonado desde GitHub. Luego "Finalizar".
 
 ![alt text](https://github.com/mikedr/trimix/blob/master/manual/003.png)
 
@@ -32,4 +32,6 @@ Utilizando la funcionalidad de crear servidor que brinda el IDE Eclipse crear un
 
 ![alt text](https://github.com/mikedr/trimix/blob/master/manual/004.png)
 
+En la siguiente ventana es necesario ingresar el path donde se encuentra bajado [Tomcat9-Win64](https://apache.zero.com.ar/tomcat/tomcat-9/v9.0.40/bin/apache-tomcat-9.0.40-windows-x64.zip)
 
+![alt text](https://github.com/mikedr/trimix/blob/master/manual/005.png)
