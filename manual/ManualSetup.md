@@ -1,4 +1,4 @@
-# Manual de setup Trimix Test Code paso a paso
+# Manual de setup paso a paso
 
 ### Creación de la base de datos
 
